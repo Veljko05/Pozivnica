@@ -1,15 +1,20 @@
+@font-face {
+        font-family: GreatVibes;
+        src: url('GreatVibes.ttf');
+    }
+
 :root {
     font-size: 16px;
-    font-family: 'Roboto';
-    --text-primary: #b6b6b6;
-    --text-secondary: #ececec;
-    --bg-primary: #23232e;
-    --bg-secondary: #141418;
+    font-family: 'GreatVibes';
+    --text-primary: #ececec;
+    --text-secondary: #b6b6b6;
+    --bg-primary: #0b4b8c;
+    --bg-secondary: #002a54;
 }
 
 body {
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: #3399ff;
     margin: 0;
     padding: 0;
 }
@@ -23,12 +28,14 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: #6649b8;
+    background: #002a54;
 }
 
-main {
-    margin-left: 5rem;
+div {
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .navbar {
@@ -76,10 +83,11 @@ main {
     color: var(--text-secondary);
 }
 
+/*Za telefone*/
 @media only screen and (max-width: 800px) {
     .navbar {
         bottom: 0;
-        width: 100vw;
+        width: 100%;
         height: 5rem;
     }
 
@@ -100,6 +108,7 @@ main {
     }
 }
 
+/*Za računare*/
 @media only screen and (min-width: 800px){
     .navbar {
         top: 0;
@@ -118,4 +127,31 @@ main {
     .navbar:hover .link-text {
         display: block;
     }
+}
+
+p {
+    font-size: 42px;
+    margin: 0.7rem;
+}
+
+.slika {
+    width: 32em;
+}
+
+.countdown {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    /*font-family: Roboto;*/
+}
+
+.containter-second, .containter-minute, .containter-hour, .containter-day {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.countdown h3 {
+    font-size: 4rem;
 }
