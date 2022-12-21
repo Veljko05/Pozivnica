@@ -71,15 +71,33 @@ main {
     transition: 500ms ease;
 }
 
-
-
 .nav-link:hover {
     background: var(--bg-secondary);
     color: var(--text-secondary);
 }
 
 @media only screen and (max-width: 600px) {
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+    }
 
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .nav-link {
+        justify-content: center;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    .nav-item img {
+        max-height: 3.5rem;
+    }
 }
 
 @media only screen and (min-width: 600px){
