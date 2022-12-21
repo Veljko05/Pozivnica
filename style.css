@@ -139,6 +139,7 @@ p {
 }
 
 .pocetna {
+    visibility: hidden;
     display: none;
 }
 
