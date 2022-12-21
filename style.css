@@ -20,7 +20,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 0.25rem;
+    width: 0.5rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -130,7 +130,7 @@ div {
 }
 
 p {
-    font-size: 42px;
+    font-size: 2.25rem;
     margin: 0.7rem;
 }
 
