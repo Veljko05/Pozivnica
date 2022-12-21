@@ -138,6 +138,10 @@ p {
     width: 32em;
 }
 
+.pocetna {
+    display: none;
+}
+
 .countdown {
     display: flex;
     flex-direction: row;
